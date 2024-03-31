@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body { margin: 0;
+        }
+        .container{
+            display: grid;/*selecionando tela em formato gid*/
+            background-color: rgb(205, 205, 148);
+        }
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            margin: 0; 
+        }
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;   
+        }
+        
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align:justify;
+            font-style: normal;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            color: black;
+        }
+
+        .tabela{
+            color: black;
+            text-align: justify;
+            border: 2px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/*seleciona formato do texto*/
+            font-style: normal;   
+        }
+        ul {
+            list-style-type: none;
+            color: #754375;
+        }
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border:solid #754375 1px
+        }    
+        li {
+            float: left;
+            color: #754375;
+        }
+        a:hover {
+            background-color: #754375;
+            color: white;
+        }
+        .fonte{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #701e5a;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;background-color: #701e5a;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Bem vindo ao <br>meu Portifólio</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="sobremim.html">Sobre Mim </a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+    <section class="principal"
+    <h1>E-mail:sara.michalach@outlook.com<br> Deixe sua mensagem que eu entro em contato com você:</h1>
+    <form action="" method="">
+    <table class="tabela">
+    <tr>
+    <th><label for="nome" class="fonte" >Nome:</label></th>
+    <td><input type="text" name="nome"
+   id="nome"></td>
+    </tr>
+    <tr>
+    <th><label for="email" class="fonte">E-mail:</label></th>
+    <td><input type="email" name="email"
+   id="email"></td>
+    </tr>
+    <tr>
+    <th><label for="msg" class="fonte">Digite sua Mensagem:</label></th>
+    <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td> <button>Enviar</button></td> 
+    </tr>
+    </table>
+    </form>
+  
+</body>
+</html>
