@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body { margin: 0;
+        }
+        .container{
+            display: grid;
+            background-color: rgb(205, 205, 148);
+        }
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+           
+        
+        }
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;
+            
+        }
+        
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align:justify;
+            font-style: normal;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            color: black;
+            
+        }
+        ul {
+            list-style-type: none;
+            color: #754375;
+        }
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border:solid #754375 1px
+        }
+            
+        li {
+            float: left;
+            color: #754375;
+        }
+        a:hover {
+            background-color: #754375;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;background-color: #701e5a;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Bem vindo ao <br>meu Portifólio</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="sobremim.html">Sobre Mim </a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+   
+    <section class="principal">
+        <h1>
+            Portifólio: <a href="https://sara-rms.github.io/hidroponia/">Site </a>
+        </h1>
+       
+    </section>
+    
+</body>
+</html>
